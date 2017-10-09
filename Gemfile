@@ -11,7 +11,7 @@ gem 'jbuilder',     '2.4.1'
 
 group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.3.20'
 end
 
 group :development do
@@ -22,7 +22,7 @@ group :development do
 end
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.3.20'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
