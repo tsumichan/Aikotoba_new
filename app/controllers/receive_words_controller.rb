@@ -3,6 +3,6 @@ class ReceiveWordsController < ApplicationController
   end
 
   def show
-    @word = Message.offset( rand(Message.count) ).first
+    @message = Message.offset( rand(Message.count) ).first
   end
 end
