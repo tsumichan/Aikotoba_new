@@ -1,12 +1,12 @@
 <%= form_tag send_words_create_path, method: :post, class: "navbar-form navbar-left search-form" do %>
-<div class="send_new">
+  <div class="send_new">
   <!-- <%= image_tag "fukidashi.png" %> -->
   <textarea name="contents" class="send_textarea" rows="10" cols="45" placeholder="おくることばをかいてね！"></textarea>
-</div>
-<div class="col-xs-12 send_new_watage">
+  </div>
+  <div class="col-xs-12 send_new_watage">
   <%= image_tag "watage03.png", size:"250x250" %>
   <button class="btn btn-warning" type="submit" name="button">おくる！</button>
-</div>
+  </div>
 <% end %>
 <div class="col-xs-12 text-right">
   <%= link_to "戻る", root_path, class: "btn btn-primary" %>
