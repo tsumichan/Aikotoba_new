@@ -12,6 +12,9 @@ gem 'mysql2',       '~> 0.3.20'
 
 group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 group :development do
