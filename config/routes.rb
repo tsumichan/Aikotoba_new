@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   scope :users do
     match '',         to:'users#index',   via:'get',   as:'users'
     match '/new',     to:'users#new',     via:'get',   as:'users_new'
+    match '/create',  to:'users#create',  via:'post',  as:'users_create'
     match '/edit',    to:'users#edit',    via:'get',   as:'users_edit'
     match '/update',  to:'users#update',  via:'post',  as:'users_update'
     match '/delete',  to:'users#delete',  via:'get',   as:'users_delete'
