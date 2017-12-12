@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>[local]逢言葉</title>
+  <% if Rails.env.production? %>
+    <title>逢言葉</title>
+  <% else %>
+    <title>[local]逢言葉</title>
+  <% end %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <%= csrf_meta_tags %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
