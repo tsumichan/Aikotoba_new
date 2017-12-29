@@ -4,11 +4,11 @@ Rails.application.routes.draw do
   #   match '/hogehoge',   to:'hoge#hogehoge',  via:'get',  as:'hoge_hoge'
   # end
 
-  match '',       to:'home#index',  via:'get',  as:'root'
+  match '',         to:'home#index',  via:'get',  as:'root'
 
-  scope :home do
-    match '/show',   to:'home#show',    via:'get',  as:'home_show'
-  end
+  # scope :home do
+  #   match '/show',   to:'home#show',    via:'get',  as:'home_show'
+  # end
 
   scope :receive_words do
     match '',       to:'receive_words#index',  via:'get',  as:'receive_words'
@@ -28,6 +28,12 @@ Rails.application.routes.draw do
     match '/edit',    to:'users#edit',    via:'get',   as:'users_edit'
     match '/update',  to:'users#update',  via:'post',  as:'users_update'
     match '/delete',  to:'users#delete',  via:'get',   as:'users_delete'
+  end
+
+  scope :log_in do
+    match '',         to:'log_in#index',   via:'get',   as:'log_in'
+    match '/new',     to:'log_in#new',     via:'get',   as:'log_in_new'
+    match '/create',  to:'log_in#create',  via:'post',  as:'log_in_create'
   end
 
 end

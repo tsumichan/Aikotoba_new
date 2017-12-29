@@ -1,7 +1,10 @@
 class LogInController < ApplicationController
-  def new
+  def index
   end
 
   def create
+  end
+
+  def new
   end
 end
