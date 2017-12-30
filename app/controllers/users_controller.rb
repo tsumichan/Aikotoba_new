@@ -24,12 +24,5 @@ class UsersController < ApplicationController
   def delete
   end
 
-  private
 
-  def user_params
-    {
-      user_name: params[:user_name],
-      password:  params[:password]
-    }
-  end
 end

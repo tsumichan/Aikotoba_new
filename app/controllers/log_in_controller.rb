@@ -3,7 +3,7 @@ class LogInController < ApplicationController
   end
 
   def new
-    @log_in = User.new(log_in_params)
+    @log_in = User.new(user_params)
   end
 
   def create
@@ -19,12 +19,4 @@ class LogInController < ApplicationController
     end
   end
 
-  private
-
-  def log_in_params
-    {
-      user_name: params[:user_name],
-      password:  params[:password]
-    }
-  end
 end
