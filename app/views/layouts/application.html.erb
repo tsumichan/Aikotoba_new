@@ -16,11 +16,13 @@
 </head>
 
 <body>
+
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
-         <a href="<%= root_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
+        <a href="<%= home_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
       </div>
+
       <%= yield %>
     </div>
   </div>

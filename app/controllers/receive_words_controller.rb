@@ -1,4 +1,5 @@
 class ReceiveWordsController < ApplicationController
+
   def index
   end
 

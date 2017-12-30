@@ -1,4 +1,5 @@
 class SendWordsController < ApplicationController
+
   def index
   end
 
@@ -9,7 +10,7 @@ class SendWordsController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      redirect_to root_path
+      redirect_to home_path
     else
       render :new
     end

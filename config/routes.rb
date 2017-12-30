@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users
   # scope :hoge do
   #   match '',            to:'hoge#hoge',      via:'get',  as:'hoge'
   #   match '/hogehoge',   to:'hoge#hogehoge',  via:'get',  as:'hoge_hoge'
   # end
 
-  match '',       to:'home#index',  via:'get',  as:'root'
+  root 'home#index'
+
+  # match '',       to:'home#index',  via:'get',  as:'root'
 
   scope :home do
-    match '/show',   to:'home#show',    via:'get',  as:'home_show'
+    match '',   to:'home#show',    via:'get',  as:'home'
   end
 
   scope :receive_words do
