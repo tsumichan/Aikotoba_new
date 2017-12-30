@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  # match '',       to:'home#index',  via:'get',  as:'root'
-
   scope :home do
     match '',   to:'home#show',    via:'get',  as:'home'
   end
