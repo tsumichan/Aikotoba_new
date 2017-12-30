@@ -22,12 +22,5 @@ Rails.application.routes.draw do
     match '/create',  to:'send_words#create',  via:'post', as:'send_words_create'
   end
 
-  scope :users do
-    match '',         to:'users#index',   via:'get',   as:'users'
-    match '/new',     to:'users#new',     via:'get',   as:'users_new'
-    match '/edit',    to:'users#edit',    via:'get',   as:'users_edit'
-    match '/update',  to:'users#update',  via:'post',  as:'users_update'
-    match '/delete',  to:'users#delete',  via:'get',   as:'users_delete'
-  end
-
+  # get '*', controller: 'application', action: 'render_404'
 end
