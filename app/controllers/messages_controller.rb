@@ -24,7 +24,7 @@ class MessagesController < ApplicationController
 
   def message_params
     {
-      # user_id:  params[:user_id],
+      user_id:  current_user.id,
       contents: params[:contents]
     }
   end
