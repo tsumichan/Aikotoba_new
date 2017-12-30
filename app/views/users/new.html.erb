@@ -1,6 +1,15 @@
 <h1>新規登録</h1>
 
 <%= form_tag users_create_path, method: :post, class: "navbar-form navbar-left search-form" do %>
+<% if @user.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 <div class="form-group row">
   <label for="name" class="col-sm-2 col-form-label">ユーザー名</label>
   <small class="text-muted">
