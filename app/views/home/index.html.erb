@@ -1,18 +1,7 @@
-<div class="col-xs-12 home_watage">
-  <%= image_tag "watage01.png"%>
+
+<div class="col-xs-12">
+<%= image_tag "Logo.png", width: "80%", class: "top_logo"%>
 </div>
-<div class="clear-fix"></div>
-<div class="center-block button">
-  <div class="col-xs-6 tobasu">
-    <a href="<%= send_words_new_path %>">
-      <%= image_tag "tanpopo.png", size: "100x100"%>
-      <p>とばす</p>
-    </a>
-  </div>
-  <div class="col-xs-6 deau">
-    <a href="<%= receive_words_show_path %>">
-      <%= image_tag "tanpopo.png", size: "100x100" %>
-      <p>であう</p>
-    </a>
-  </div>
-</div>
+
+<%= link_to "ログイン", new_user_session_path, class: "btn btn-primary" %><br />
+<%= link_to "新規登録", new_user_registration_path, class: "btn btn-warning" %><br />

@@ -20,6 +20,7 @@
 </head>
 
 <body>
+
   <div class="container">
     <% flash.each do |name, msg| %>
       <div class="alert alert-<%= name %>">
@@ -29,9 +30,16 @@
     <% end %>
     <div class="row">
       <div class="col-xs-3">
-         <a href="<%= root_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
+        <a href="<%= home_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
       </div>
-      <%= yield %>
+      <% if alert %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <%= yield %>
+      </div>
     </div>
   </div>
 

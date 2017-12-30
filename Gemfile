@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'mysql2',       '~> 0.3.20'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri

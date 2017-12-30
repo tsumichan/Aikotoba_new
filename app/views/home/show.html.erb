@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+  <%= link_to 'ユーザー情報変更', edit_user_registration_path %>
+  <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+<% end %>
+
+<div class="col-xs-12 home_watage">
+  <%= image_tag "watage01.png"%>
+</div>
+<div class="clear-fix"></div>
+<div class="center-block button">
+  <div class="col-xs-6 tobasu">
+    <a href="<%= messages_new_path %>">
+      <%= image_tag "tanpopo.png", size: "100x100"%>
+      <p>とばす</p>
+    </a>
+  </div>
+  <div class="col-xs-6 deau">
+    <a href="<%= messages_show_path %>">
+      <%= image_tag "tanpopo.png", size: "100x100" %>
+      <p>であう</p>
+    </a>
+  </div>
+</div>
