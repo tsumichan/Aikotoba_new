@@ -30,11 +30,13 @@
       <%= msg %>
     </div>
     <% end %>
+    <% unless controller.controller_name.in?(['home','registrations','sessions']) %>
     <div class="row">
       <div class="col-xs-3">
         <a href="<%= home_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
       </div>
     </div>
+    <% end %>
     <div class="row">
       <div class="col-xs-12">
         <%= yield %>
