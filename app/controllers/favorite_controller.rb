@@ -21,6 +21,8 @@ class FavoriteController < ApplicationController
     @favorite = Favorite.find_by(message_id: params[:id])
     if @favorite.destroy
       redirect_to show_favorite_path, success: 'おきに から削除しました！'
+    else
+      redirect_to show_favorite_path, danger: 'おきに から削除できませんでした。もう一度実行してください'
     end
   end
 
