@@ -2,9 +2,9 @@
 <html>
 <head>
   <% if Rails.env.production? %>
-    <title>逢言葉</title>
+  <title>逢言葉</title>
   <% else %>
-    <title>[local]逢言葉</title>
+  <title>[local]逢言葉</title>
   <% end %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <%= csrf_meta_tags %>
@@ -23,18 +23,15 @@
 
   <div class="container">
     <% flash.each do |name, msg| %>
-      <div class="alert alert-<%= name %>">
-        <a class="close" data-dismiss="alert">×</a>
-        <%= msg %>
-      </div>
+    <div class="alert alert-<%= name %>">
+      <a class="close" data-dismiss="alert">×</a>
+      <%= msg %>
+    </div>
     <% end %>
     <div class="row">
       <div class="col-xs-3">
         <a href="<%= home_path %>"><%= image_tag "tanpopo.png", size:"50x50", class:"text-right top_tanpopo" %></a>
       </div>
-      <% if alert %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
     </div>
     <div class="row">
       <div class="col-xs-12">
