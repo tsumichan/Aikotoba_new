@@ -3,6 +3,8 @@
 <head>
   <% if Rails.env.production? %>
   <title>逢言葉</title>
+  <% elsif Rails.env.test? %>
+  <title>[staging]逢言葉</title>
   <% else %>
   <title>[local]逢言葉</title>
   <% end %>
