@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   add_flash_types :success, :info, :warning, :danger
 
   # priduction環境の時はbasic認証をかける
-  http_basic_authenticate_with name: ENV['BASIC_AUTH_USERNAME'], password: ENV['BASIC_AUTH_PASSWORD'] if Rails.env.production?
+  # http_basic_authenticate_with name: ENV['BASIC_AUTH_USERNAME'], password: ENV['BASIC_AUTH_PASSWORD'] if Rails.env.production?
 
   def after_sign_in_path_for(resource)
     home_path
