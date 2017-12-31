@@ -1,0 +1,6 @@
+<h2>おきにな言葉</h2>
+    <% @favs.each do |fav| %>
+      <% fav = Message.find(fav.message_id) %>
+            <p><%= fav.contents %></p>
+            <div class="name2"><%= link_to "おきにから削除する", favorite_path(fav), method: :delete %></div>
+    <% end %>
