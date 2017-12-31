@@ -11,7 +11,7 @@ gem 'jbuilder',     '2.4.1'
 gem 'mysql2',       '~> 0.3.20'
 gem 'devise'
 
-group :development, :staging do
+group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri
   gem 'pry-rails'
   gem 'pry-byebug'
@@ -25,7 +25,7 @@ group :development do
   gem 'spring-watcher-listen', '2.0.0'
 end
 
-group :production, :staging do
+group :production do
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
