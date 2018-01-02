@@ -6,13 +6,11 @@ Rails.application.routes.draw do
   #   match '/hogehoge',   to:'hoge#hogehoge',  via:'get',  as:'hoge_hoge'
   # end
 
-  root 'home#show'
+  root 'home#index'
 
 
-  scope :home do
-    match '',        to:'home#show',    via:'get',  as:'home'
-    match '/index',  to:'home#index',   via:'get',  as:'top_info'
-  end
+  match '/home',   to:'home#show',   via:'get',  as:'home'
+  match '/about',  to:'home#about',  via:'get',  as:'about'
 
   scope :messages do
     match '',          to:'messages#index',   via:'get',  as:'messages'
