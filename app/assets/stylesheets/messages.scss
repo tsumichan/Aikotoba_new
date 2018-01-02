@@ -10,11 +10,28 @@
 
 .send_new {
   text-align: center;
+  position: relative;
+
+  img {
+    max-width: 340px;
+  }
+
+  textarea {
+    position: absolute;/*絶対配置*/
+    top: 22%;
+    left: 18%;
+  }
 }
 .send_textarea {
-  border: 2px green dotted;
+  appearance: none;
+  border: none;
 }
 .send_new_watage {
   padding: 0;
-  vertical-align: bottom;
+  // vertical-align: bottom;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }

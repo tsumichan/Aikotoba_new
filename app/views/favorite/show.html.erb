@@ -1,6 +1,10 @@
 <h2>おきにな言葉</h2>
-    <% @favs.each do |fav| %>
-      <% fav = Message.find(fav.message_id) %>
-            <p><%= fav.contents %></p>
-            <div class="name2"><%= link_to "おきにから削除する", favorite_path(fav), method: :delete %></div>
-    <% end %>
+<% @favs.each do |fav| %>
+<div class="okini_list">
+  <% fav = Message.find(fav.message_id) %>
+  <div class="message"><%= simple_format(fav.contents) %></div>
+  <div class="text-right">
+    <%= link_to image_tag('delete.png', size: '50x50'), favorite_path(fav), method: :delete, data: {confirm: "おきに から削除します。\nよろしいですか？"} %>
+  </div>
+</div>
+<% end %>

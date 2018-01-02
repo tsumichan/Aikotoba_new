@@ -8,13 +8,17 @@ class FavoriteController < ApplicationController
   def create
     @user_id = current_user.id
     @favorite = Favorite.new(message_id: params[:id], user_id: current_user.id)
+    @favs = Favorite.where(user_id: @user_id).all
 
-    if @favorite.save
-      redirect_to show_favorite_path, success: 'おきに に追加しました！'
+    if @favs.count < 3
+      if @favorite.save
+        redirect_to show_favorite_path, success: 'おきに に追加しました！'
+      else
+        redirect_to home_path, danger: 'おきに に追加できませんでした…'
+      end
     else
-      redirect_to show_favorite_path, danger: 'おきに に追加できませんでした…'
+      redirect_to show_favorite_path, warning: 'おきに に追加できるのは3件までです'
     end
-
   end
 
   def destroy

@@ -11,26 +11,26 @@ body {
 }
 
 .button {
-  display: table;
-  // table-layout: fixed;
   text-align: center;
-  vertical-align: middle;
-  margin-top: 50px;
+  margin: 10px 0;
 }
 
-.tobasu .deau {
+.tobasu .deau .okini {
   position: relative;
 }
 
-.tobasu p, .deau p {
+.tobasu p, .deau p, .okini p{
   position: absolute;/*絶対配置*/
+  top: 40%;
+  left: 35%;
+  font-size: 1.3em;
+  margin:0;
+  padding:0;
+  color: #6B3E08;
+  font-weight: bold;
 }
 
-.tobasu img, .deau img {
+.tobasu img, .deau img .okini img {
   width: 100px;
   height: 100px;
-}
-
-.top_logo {
-  margin: 100px auto;
 }

@@ -7,23 +7,28 @@
   <%= image_tag "watage01.png"%>
 </div>
 <div class="clear-fix"></div>
-<div class="center-block button">
-  <div class="col-xs-6 tobasu">
-    <a href="<%= messages_new_path %>">
-      <%= image_tag "tanpopo.png", size: "100x100"%>
-      <p>とばす</p>
-    </a>
+
+<!-- <div class="button"> -->
+
+  <div class="col-xs-6 button">
+    <div class="tobasu">
+      <a href="<%= messages_new_path %>">
+        <%= image_tag "tobasu.png", size: "100x100"%>
+      </a>
+    </div>
   </div>
-  <div class="col-xs-6 deau">
-    <a href="<%= messages_show_path %>">
-      <%= image_tag "tanpopo.png", size: "100x100" %>
-      <p>であう</p>
-    </a>
+  <div class="col-xs-6 button">
+    <div class="deau">
+      <a href="<%= messages_show_path %>">
+        <%= image_tag "deau.png", size: "100x100" %>
+      </a>
+    </div>
   </div>
-  <div class="col-xs-6 deau">
-    <a href="<%= show_favorite_path %>">
-      <%= image_tag "tanpopo.png", size: "100x100" %>
-      <p>おきに</p>
-    </a>
+  <div class="col-xs-6 button">
+    <div class="okini">
+      <a href="<%= show_favorite_path %>">
+        <%= image_tag "okini.png", size: "100x100" %>
+      </a>
+    </div>
   </div>
-</div>
+<!-- </div> -->
