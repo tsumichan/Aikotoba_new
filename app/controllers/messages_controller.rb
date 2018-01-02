@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      redirect_to home_path
+      redirect_to root_path
     else
       render :new
     end
