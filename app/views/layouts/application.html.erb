@@ -26,7 +26,7 @@
 
   <div class="container">
     <% flash.each do |name, msg| %>
-    <div class="alert alert-<%= name %> alert-dismissible">
+    <div class="alert <%= bootstrap_class_for(name) %> alert-dismissible">
       <a class="close" data-dismiss="alert">×</a>
       <%= msg %>
     </div>
@@ -34,7 +34,7 @@
     <% unless controller.controller_name.in?(['home','registrations','sessions']) %>
     <div class="row">
       <div class="col-xs-3 top_tanpopo">
-        <a href="<%= home_path %>">
+        <a href="<%= root_path %>">
           <%= image_tag "top.png", size:"50x50", class:"text-right" %>
         </a>
       </div>
