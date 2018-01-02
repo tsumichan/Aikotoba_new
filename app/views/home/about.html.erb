@@ -15,6 +15,9 @@
   あなたの言葉も、すてきな出会いがありますように。
 </p>
 
-<div class="col-xs-12 text-right">
-  <%= link_to image_tag('modoru.png', size: '60x60'), root_path%>
+<div class="col-xs-6 text-center enter_button">
+  <%= link_to "ログイン", new_user_session_path, class: "btn btn-primary" %>
+</div>
+<div class="col-xs-6 text-center enter_button">
+  <%= link_to "新規登録", new_user_registration_path, class: "btn btn-warning" %>
 </div>
