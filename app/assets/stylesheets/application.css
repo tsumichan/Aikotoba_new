@@ -26,22 +26,25 @@ body {
   width: 100%;
   height: 100%;
   background-color: #7ed66f;
-  overflow: hidden;
   font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #6B3E08;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #faff00;
+
 }
 
 .top_tanpopo {
   position: relative;
-}
-
-.top_tanpopo p {
-  position: absolute;/*絶対配置*/
-  top: 40%;
-  left: 35%;
-  margin:0;
-  padding:0;
-  color: #6B3E08;
-  font-weight: bold;
 }
 
 .top_tanpopo img {
@@ -50,4 +53,8 @@ body {
 
 .shared_links {
   margin: 20px 0;
+}
+
+.top_logo {
+  margin: 10px 0;
 }

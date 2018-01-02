@@ -1,12 +1,12 @@
-<%= form_tag messages_create_path, method: :post, class: "navbar-form navbar-left search-form" do %>
+<%= form_tag messages_create_path, method: :post do %>
   <div class="col-xs-12 send_new center-block">
-  <%= image_tag "watage_write.png" %>
-    <textarea name="contents" class="send_textarea" rows="3" cols="30" placeholder="おくることばをかいてね！"></textarea>
+  <%= image_tag "watage02.png" %>
+    <textarea name="contents" class="send_textarea" rows="8" cols="40" placeholder="おくることばをかいてね！"></textarea>
   </div>
   <div class="col-xs-12 send_new_watage text-right">
   <%= image_submit_tag("okuru.png") %>
   </div>
 <% end %>
-<div class="col-xs-12 text-right">
+<!-- <div class="col-xs-12 text-right">
   <%= link_to image_tag('modoru.png', size: '60x60'), home_path%>
-</div>
+</div> -->

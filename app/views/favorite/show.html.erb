@@ -2,7 +2,9 @@
 <% @favs.each do |fav| %>
 <div class="okini_list">
   <% fav = Message.find(fav.message_id) %>
-  <div class="message"><%= simple_format(fav.contents) %></div>
+  <div class="message">
+    <%= simple_format(fav.contents) %>
+  </div>
   <div class="text-right">
     <%= link_to image_tag('delete.png', size: '50x50'), favorite_path(fav), method: :delete, data: {confirm: "おきに から削除します。\nよろしいですか？"} %>
   </div>

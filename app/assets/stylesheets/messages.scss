@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .message {
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: #fff;
   text-align: center;
 }
@@ -18,13 +18,12 @@
 
   textarea {
     position: absolute;/*絶対配置*/
-    top: 22%;
-    left: 18%;
+    top: 10%;
+    left: 10%;
   }
 }
 .send_textarea {
-  appearance: none;
-  border: none;
+  border: 3px dotted;
 }
 .send_new_watage {
   padding: 0;
