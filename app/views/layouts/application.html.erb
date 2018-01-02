@@ -25,7 +25,7 @@
 
   <div class="container">
     <% flash.each do |name, msg| %>
-    <div class="alert alert-<%= name %>">
+    <div class="alert alert-<%= name %> alert-dismissible">
       <a class="close" data-dismiss="alert">×</a>
       <%= msg %>
     </div>
