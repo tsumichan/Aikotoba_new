@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      redirect_to root_path
+      redirect_to home_path, success: "ことば をおくったよ〜！"
     else
       render :new
     end

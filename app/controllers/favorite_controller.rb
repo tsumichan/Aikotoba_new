@@ -14,7 +14,7 @@ class FavoriteController < ApplicationController
       if @favorite.save
         redirect_to show_favorite_path, success: 'おきに に追加しました！'
       else
-        redirect_to root_path, danger: 'おきに に追加できませんでした…'
+        redirect_to home_path, danger: 'おきに に追加できませんでした…'
       end
     else
       redirect_to show_favorite_path, warning: 'おきに に追加できるのは3件までです'
