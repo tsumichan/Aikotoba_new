@@ -27,3 +27,7 @@ production:
   adapter: mysql2
   pool: 5
   timeout: 5000
+  database: silent-miyazaki-5811_5gtix
+  username: silent-miyazaki-5811_58e00
+  password: Kitty-723723
+  host: mysql-1.mc.lolipop.lan
