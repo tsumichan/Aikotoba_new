@@ -10,14 +10,14 @@
 
 .send_new {
   text-align: center;
-  position: relative;
+  // position: relative;
 
   img {
     max-width: 340px;
   }
 
   textarea {
-    position: absolute;/*絶対配置*/
+    // position: absolute;/*絶対配置*/
     top: 10%;
     left: 10%;
   }
