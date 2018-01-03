@@ -2,6 +2,9 @@
   <%= simple_format(@message.contents) %>
 </div>
 
+<div class="col-xs-12 text-left">
+  <%= image_tag 'watage07.png', size: '300x300'%>
+</div>
 <div class="col-xs-12 text-right">
   <%= link_to image_tag('okini_wood.png', size: '50x50'), add_favorite_path(@message.id), method: :post %>
 </div>
