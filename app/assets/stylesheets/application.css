@@ -43,6 +43,10 @@ a:hover {
 
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .top_tanpopo {
   position: relative;
 }
