@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   match '/home',   to:'home#show',   via:'get',  as:'home'
   match '/about',  to:'home#about',  via:'get',  as:'about'
+  match '/check',  to:'home#check',  via:'get',  as:'check'
+
 
   scope :messages do
     match '',          to:'messages#index',   via:'get',  as:'messages'

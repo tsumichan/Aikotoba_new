@@ -10,4 +10,7 @@ before_action :authenticate_user!, only: :show
   def about
   end
 
+  def check
+  end
+
 end

@@ -4,6 +4,7 @@
 
 <h2>ログイン</h2>
 
+<%= link_to "テストユーザーの方へ（必ずご一読ください）", check_path %>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <div class="form-group">
   <%= f.label :email %><br />

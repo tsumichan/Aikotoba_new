@@ -4,6 +4,7 @@
 
 <h2>ユーザー登録</h2>
 
+<%= link_to "テストユーザーの方へ（必ずご一読ください）", check_path %>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
