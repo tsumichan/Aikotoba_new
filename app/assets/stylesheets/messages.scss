@@ -6,6 +6,7 @@
   padding: 20px 0;
   background-color: #fff;
   text-align: center;
+  border-radius: 10px;
 }
 
 .send_new {
@@ -17,20 +18,13 @@
   }
 
   textarea {
-    // position: absolute;/*絶対配置*/
-    top: 10%;
-    left: 10%;
+    border-radius: 8px;
   }
 }
 .send_textarea {
   border: 3px dotted;
 }
-.send_new_watage {
-  padding: 0;
-  // vertical-align: bottom;
-
-  img {
-    width: 100px;
-    height: 100px;
-  }
+.send_new_watage img {
+  width: 100px;
+  height: 100px;
 }
