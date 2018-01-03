@@ -1,9 +1,9 @@
 <%= form_tag messages_create_path, method: :post do %>
   <div class="col-xs-12 send_new center-block">
-    <textarea name="contents" class="send_textarea" rows="8" cols="40" placeholder="おくることばをかいてね！"></textarea>
+    <textarea name="contents" class="send_textarea" rows="8" cols="35" placeholder="おくることばをかいてね！"></textarea>
   </div>
-  <div class="">
-    <%= image_tag "watage03.png", size: "200x300" %>
+  <div class="col-xs-12">
+    <%= image_tag "watage03.png", size: "150x225" %>
   </div>
   <div class="col-xs-12 send_new_watage text-right">
     <button class="btn btn-warning" type="submit" name="button">おくる！</button>
