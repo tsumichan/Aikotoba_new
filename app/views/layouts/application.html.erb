@@ -26,7 +26,7 @@
 
   <div class="container">
     <% flash.each do |name, msg| %>
-    <div class="alert alert-<%= bootstrap_class_for(name) %>">
+    <div class="alert alert-<%= bootstrap_class_for(name) %> alert-dismissible" aria-label="Close">
       <a class="close" data-dismiss="alert">×</a>
       <%= msg %>
     </div>
@@ -47,5 +47,8 @@
     </div>
   </div>
 
+<script type="text/javascript">
+  $(.alert).fade('close');
+</script>
 </body>
 </html>
