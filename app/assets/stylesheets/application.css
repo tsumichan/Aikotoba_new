@@ -66,3 +66,8 @@ a:visited {
 .enter_button {
   margin: 30px 0;
 }
+
+#alert {
+  position: absolute;
+  z-index: 999;
+}
