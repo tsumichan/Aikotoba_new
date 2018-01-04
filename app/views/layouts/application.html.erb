@@ -26,7 +26,7 @@
 
   <div class="container">
     <% flash.each do |name, msg| %>
-    <div class="alert alert-<%= bootstrap_class_for(name) %> alert-dismissible">
+    <div class="alert alert-<%= bootstrap_class_for(name) %>">
       <a class="close" data-dismiss="alert">×</a>
       <%= msg %>
     </div>
