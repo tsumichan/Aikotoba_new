@@ -42,10 +42,10 @@
     <%= image_tag 'share_line.png', size: '25x25', alt: "LINEで送る" %>
   </a>
 </div>
+<h3>不具合のご報告・お問い合わせ</h3>
+<%= link_to "不具合のご報告・お問い合わせはこちら", 'https://goo.gl/forms/hFZImIVahT6oljvD2', target: 'blank' %>
 <h3>アカウント削除</h3>
-
-<p><%= button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "アカウントを削除します。\nこの操作は取り消せません。よろしいですか？" }, method: :delete, class: "btn btn-danger" %></p>
-
+<%= button_to "アカウントを削除する", registration_path(resource_name), data: { confirm: "アカウントを削除します。\nこの操作は取り消せません。よろしいですか？" }, method: :delete, class: "btn btn-danger" %>
 <div class="col-xs-12 text-right">
   <%= link_to image_tag('modoru.png', size: '60x60'), home_path%>
 </div>
