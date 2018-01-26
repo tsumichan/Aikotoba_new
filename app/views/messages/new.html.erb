@@ -1,3 +1,10 @@
+<div class="row">
+  <div class="col-xs-3 top_tanpopo">
+    <a href="<%= home_path %>">
+      <%= image_tag "top.png", size:"50x50", class:"text-right" %>
+    </a>
+  </div>
+</div>
 <%= form_tag messages_create_path, method: :post do %>
   <div class="col-xs-12 send_new center-block">
     <textarea name="contents" class="send_textarea" rows="8" cols="35" placeholder="おくることばをかいてね！（絵文字は使えません）"></textarea>

@@ -27,17 +27,8 @@
   <div class="container">
     <% flash.each do |name, msg| %>
     <div id="alert" class="col-xs-11 alert alert-<%= bootstrap_class_for(name) %> alert-dismissible fade" >
-      <!-- <a class="close" data-dismiss="alert" aria-label="Close">×</a> -->
+      <a class="close" data-dismiss="alert" aria-label="Close">×</a>
       <%= msg %>
-    </div>
-    <% end %>
-    <% unless controller.controller_name.in?(['home','registrations','sessions']) %>
-    <div class="row">
-      <div class="col-xs-3 top_tanpopo">
-        <a href="<%= home_path %>">
-          <%= image_tag "top.png", size:"50x50", class:"text-right" %>
-        </a>
-      </div>
     </div>
     <% end %>
     <div class="row">
@@ -48,10 +39,6 @@
   </div>
   <script type="text/javascript">
   $(function () {
-    // $('#alert').click(function () {
-    //   $('#alert').alert('close');
-    // });
-
     $("#alert").fadeTo(2000, 500).fadeOut(500, function(){
       $("#alert").fadeOut(500);
     });
