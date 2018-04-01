@@ -1,0 +1,39 @@
+
+<style>
+.fuwafuwa {
+  -webkit-animation: fuwafuwa 5s linear 0s infinite;
+  animation: fuwafuwa 5s linear 0s infinite;
+  animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes fuwafuwa {
+  0%    { transform:  translate(-30px, 0px);   }
+  20%   { transform:  translate(30px, -20px);  }
+  40%   { transform:  translate(-30px, -40px); }
+  60%   { transform:  translate(30px, -60px);  }
+  80%   { transform:  translate(-30px, -80px); }
+  100%  { transform:  translate(30px, -100px); }
+
+}
+@keyframes fuwafuwa {
+  0%    { transform:  translate(-30px, 0px);    }
+  20%   { transform:  translate(30px, -80px);   }
+  40%   { transform:  translate(-30px, -160px); }
+  60%   { transform:  translate(30px, -240px);  }
+  80%   { transform:  translate(-30px, -320px); }
+  100%  { transform:  translate(30px, -400px);  }
+}
+
+</style>
+
+<script>
+// 一定時間経過後に指定ページにジャンプする
+mnt = 5; // 何秒後に移動するか？
+function jumpPage() {
+  location.href = "/home";
+}
+setTimeout("jumpPage()",mnt*1000)
+</script>
+
+<div class="col-xs-12 home_watage">
+  <%= image_tag 'watage06.png', size: '300x300', id: 'watage', class: 'fuwafuwa'%>
+</div>

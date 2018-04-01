@@ -4,21 +4,26 @@ body {
 
 .home_watage {
   text-align: center;
-  animation: updown 1.8s linear infinite alternate none running;
-  animation-timing-function: ease-in-out;
-  img {
-    max-width: 100%;
-    max-height: 100%;
+  div {
+    animation: horizontal 2s ease-in-out infinite alternate;
+    a {
+      display: block;
+      animation: vertical 2s ease-in-out infinite alternate;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
   }
 }
 
-@keyframes updown {
-  0% {
-    transform: translate(0, -15px);
-  }
-  100% {
-    transform: translate(0, 25px);
-  }
+@keyframes horizontal {
+  0% { transform:translateX( -8px); }
+  100% { transform:translateX(  0px); }
+}
+@keyframes vertical {
+  0% { transform:translateY(-25px); }
+  100% { transform:translateY(  0px); }
 }
 
 .button {
