@@ -13,12 +13,13 @@ Rails.application.routes.draw do
   match '/check',  to:'home#check',  via:'get',  as:'check'
 
   scope :messages do
-    match '',          to:'messages#index',   via:'get',  as:'messages'
-    match '/show',     to:'messages#show',    via:'get',  as:'messages_show'
-    match '/new',      to:'messages#new',     via:'get',  as:'messages_new'
-    match '/create',   to:'messages#create',  via:'post', as:'messages_create'
-    match '/:id/add',  to:'favorite#create',  via:'post', as:'add_favorite'
-    match '/show_fav', to:'favorite#show',    via:'get',  as:'show_favorite'
+    match '',           to:'messages#index',     via:'get',  as:'messages'
+    match '/receiving', to:'messages#receiving', via:'get',  as:'messages_receiving'
+    match '/show',      to:'messages#show',      via:'get',  as:'messages_show'
+    match '/new',       to:'messages#new',       via:'get',  as:'messages_new'
+    match '/create',    to:'messages#create',    via:'post', as:'messages_create'
+    match '/:id/add',   to:'favorite#create',    via:'post', as:'add_favorite'
+    match '/show_fav',  to:'favorite#show',      via:'get',  as:'show_favorite'
   end
 
   # get '*', controller: 'application', action: 'render_404'

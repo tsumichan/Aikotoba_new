@@ -16,6 +16,10 @@ class MessagesController < ApplicationController
     end
   end
 
+  def receiving
+    render template: "messages/receiving"
+  end
+
   def show
     @message = Message.offset( rand(Message.count) ).first
   end
