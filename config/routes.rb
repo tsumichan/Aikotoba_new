@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     match '/new',      to:'messages#new',     via:'get',  as:'messages_new'
     match '/create',   to:'messages#create',  via:'post', as:'messages_create'
     match '/:id/add',  to:'favorite#create',  via:'post', as:'add_favorite'
-    match '/show_fav', to:'favorite#show',    via:'get', as:'show_favorite'
+    match '/show_fav', to:'favorite#show',    via:'get',  as:'show_favorite'
   end
 
   # get '*', controller: 'application', action: 'render_404'
