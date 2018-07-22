@@ -13,7 +13,7 @@
   <% @favs.each do |fav| %>
   <div class="okini_list">
     <% fav = Message.find(fav.message_id) %>
-    <div class="message">
+    <div class="okini_message">
       <%= simple_format(fav.contents) %>
     </div>
     <div class="text-right">
